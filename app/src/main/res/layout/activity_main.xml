@@ -17,21 +17,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/answer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/ball"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="70dp"
-            android:background="@android:color/holo_blue_dark"
-            android:text="The Answer is"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_light"
-            android:textSize="36sp"
-            android:textStyle="bold" />
-
         <Button
             android:id="@+id/askbutton"
             android:layout_width="match_parent"
@@ -44,16 +29,31 @@
             android:textColor="@android:color/holo_red_dark"
             android:textSize="30sp"
             android:textStyle="bold" />
-    </RelativeLayout>
 
-    <ImageView
-        android:id="@+id/ball"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="145dp"
-        android:src="@drawable/ball1" />
+        <ImageView
+            android:id="@+id/ball"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/askbutton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="11dp"
+            android:src="@drawable/ball1" />
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="46dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="The Answer is"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
 </RelativeLayout>
